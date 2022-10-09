@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.App {
+  width: 412px;
+  margin: auto;
+  border: 2px solid black;
+  overflow-y: scroll;
+  height: 700px;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  /* box-shadow: 0px 0px 10px 2px #888888; */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.search-bar {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 1.5px solid rgb(232, 232, 232);
+  padding: 3px;
+}
+.search-bar input {
+  border: none;
+  padding: 10px 5px;
+  outline: none;
+}
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar {
+  width: 25px;
+  height: 2.5px;
+  background-color: lightgrey;
+  margin: 6px;
+}
+.Carts {
+  background-color: rgb(213, 211, 211, 0.3);
+  padding: 20px;
+}
+.cart-feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-feed-header p {
+  color: rgb(90, 171, 178);
+}
+.cart-feed-header p:hover {
+  cursor: pointer;
+  color: black;
+}
+.cart-feed-header p::before {
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+  font-size: 23px;
+}
+.cart-feed-items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 2px 10px;
+}
+.cart-feed-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cart-feed-items img {
+  width: 68px;
+}
+.Footer {
+  border-top: 2px solid rgba(128, 128, 128, 0.467);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(249, 249, 249);
+}
+.Footer img {
+  margin-top: 30px;
+}
+.Footer h1 {
+  margin-top: 9px;
+}
+.Footer div {
+  margin-top: 5px;
+  width: 100%;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.footer-text div {
+  text-align: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.467);
+  width: 80%;
+  padding: 15px;
+  color: rgb(174, 174, 174);
+  font-weight: bold;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
